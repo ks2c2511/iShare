@@ -14,5 +14,6 @@ pod 'INTULocationManager'
 pod 'SVProgressHUD'
 pod 'DateTools'
 pod 'EGOCache', '~> 2.1.3'
+pod 'ColorUtils', '~> 1.1.3'
 end
 
