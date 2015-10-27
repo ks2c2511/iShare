@@ -13,5 +13,6 @@ pod 'CCBottomRefreshControl'
 pod 'INTULocationManager'
 pod 'SVProgressHUD'
 pod 'DateTools'
+pod 'EGOCache', '~> 2.1.3'
 end
 

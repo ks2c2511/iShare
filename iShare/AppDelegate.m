@@ -7,7 +7,8 @@
 //
 
 #import "AppDelegate.h"
-
+#import "GzNetworking.h"
+#import "TestController.h"
 @interface AppDelegate ()
 
 @end
@@ -16,7 +17,20 @@
 
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
+    
+     self.window = [[UIWindow alloc] initWithFrame:[UIScreen mainScreen].bounds];
+    self.window.rootViewController = [TestController new];
     // Override point for customization after application launch.
+    [[GzNetworking sharedInstance] GETCache:@"http://sentienich.aviostore.com/lottery/KQXS10Day.php?ma_tinh=1&so_lan_quay=1" parameters:nil refreshCache:YES success:^(id responseString) {
+#if DEBUG
+        NSLog(@"---log---> %@",responseString);
+#endif
+        
+    } failure:^(AFHTTPRequestOperation *operation, NSError *error) {
+        
+    }];
+    
+    [self.window makeKeyAndVisible];
     return YES;
 }
 

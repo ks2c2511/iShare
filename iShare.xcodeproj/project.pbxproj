@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		1A0404C056379AD3A4FD4AD2 /* libPods-iShare.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 0F37F476CDD800CBBA7B6F3E /* libPods-iShare.a */; };
+		6A2321F91BDFC27700DA1842 /* GzNetworking.m in Sources */ = {isa = PBXBuildFile; fileRef = 6A2321F81BDFC27700DA1842 /* GzNetworking.m */; settings = {ASSET_TAGS = (); }; };
+		6A2321FC1BDFCFBF00DA1842 /* TestController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6A2321FB1BDFCFBF00DA1842 /* TestController.m */; settings = {ASSET_TAGS = (); }; };
 		6AFE9AC71BDE76F20029C2F4 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 6AFE9AC61BDE76F20029C2F4 /* main.m */; };
 		6AFE9ACA1BDE76F30029C2F4 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 6AFE9AC91BDE76F30029C2F4 /* AppDelegate.m */; };
 		6AFE9AD21BDE76F30029C2F4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6AFE9AD11BDE76F30029C2F4 /* Assets.xcassets */; };
@@ -16,6 +18,10 @@
 
 /* Begin PBXFileReference section */
 		0F37F476CDD800CBBA7B6F3E /* libPods-iShare.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-iShare.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		6A2321F71BDFC27700DA1842 /* GzNetworking.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GzNetworking.h; sourceTree = "<group>"; };
+		6A2321F81BDFC27700DA1842 /* GzNetworking.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GzNetworking.m; sourceTree = "<group>"; };
+		6A2321FA1BDFCFBF00DA1842 /* TestController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TestController.h; sourceTree = "<group>"; };
+		6A2321FB1BDFCFBF00DA1842 /* TestController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TestController.m; sourceTree = "<group>"; };
 		6AFE9AC21BDE76F20029C2F4 /* iShare.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = iShare.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6AFE9AC61BDE76F20029C2F4 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		6AFE9AC81BDE76F20029C2F4 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -39,6 +45,23 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		6A2321F51BDFC26600DA1842 /* Class */ = {
+			isa = PBXGroup;
+			children = (
+				6A2321F61BDFC26600DA1842 /* Network */,
+			);
+			path = Class;
+			sourceTree = "<group>";
+		};
+		6A2321F61BDFC26600DA1842 /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				6A2321F71BDFC27700DA1842 /* GzNetworking.h */,
+				6A2321F81BDFC27700DA1842 /* GzNetworking.m */,
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
 		6AFE9AB91BDE76F20029C2F4 = {
 			isa = PBXGroup;
 			children = (
@@ -62,10 +85,13 @@
 			children = (
 				6AFE9AC81BDE76F20029C2F4 /* AppDelegate.h */,
 				6AFE9AC91BDE76F30029C2F4 /* AppDelegate.m */,
+				6A2321F51BDFC26600DA1842 /* Class */,
 				6AFE9AD11BDE76F30029C2F4 /* Assets.xcassets */,
 				6AFE9AD31BDE76F30029C2F4 /* LaunchScreen.storyboard */,
 				6AFE9AD61BDE76F30029C2F4 /* Info.plist */,
 				6AFE9AC51BDE76F20029C2F4 /* Supporting Files */,
+				6A2321FA1BDFCFBF00DA1842 /* TestController.h */,
+				6A2321FB1BDFCFBF00DA1842 /* TestController.m */,
 			);
 			path = iShare;
 			sourceTree = "<group>";
@@ -217,7 +243,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				6AFE9ACA1BDE76F30029C2F4 /* AppDelegate.m in Sources */,
+				6A2321F91BDFC27700DA1842 /* GzNetworking.m in Sources */,
 				6AFE9AC71BDE76F20029C2F4 /* main.m in Sources */,
+				6A2321FC1BDFCFBF00DA1842 /* TestController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
